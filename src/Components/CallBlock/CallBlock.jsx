@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import axios from "axios";
 import styles from "./CallBlock.module.scss";
 
 const CallBlock = () => {

@@ -5,12 +5,8 @@ import Footer from "@/Components/Footer/Footer";
 import Slider from "@/Components/Slider/Slider";
 import Instagram from "@/Components/Instagram/Instagram";
 import Map from "@/Components/Map/Map";
-import CallBlock from "@/Components/CallBlock/CallBlock";
 
 export default function Home() {
-  const render = (status) => {
-    return <h1>{status}</h1>;
-  };
   return (
     <>
       <Head>

@@ -1,0 +1,16 @@
+.App {
+  height: 60vh;
+  margin-top: 100px;
+
+  .mapContainer {
+    height: 100%;
+    width: 100%;
+  }
+  .callBlockWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: -75%;
+  }
+}

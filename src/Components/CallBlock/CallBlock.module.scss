@@ -1,0 +1,95 @@
+.block {
+  width: 40vmax;
+  height: 35vmin;
+  background-color: white;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1vh 4vw 1vh 3vw;
+  margin-right: 10vmin;
+  .title {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: Nunito;
+    font-size: calc(10px + 1.8vmin);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 4vmin;
+  }
+  .inputBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 13vmin;
+    margin-bottom: 3vmin;
+
+    .input {
+      height: 5vmin;
+      width: 90%;
+      background: #d9d9d9;
+      font-family: Nunito;
+      font-size: calc(5px + 1vh);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      color: rgba(0, 0, 0, 0.5);
+      padding-left: 5%;
+      outline: none;
+      border: none;
+    }
+  }
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .inputCheckbox {
+      width: 4vmin;
+      height: 4vmin;
+      margin-right: 6vmin;
+      accent-color: #d9d9d9;
+    }
+    .confirm {
+      color: rgba(0, 0, 0, 0.5);
+      font-family: Nunito;
+      font-size: calc(5px + 1vmin);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+}
+.send {
+  position: relative;
+  left: -14vmin;
+  top: -3vmin;
+  width: 26vmax;
+  height: 10vmin;
+  background: #000513;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+
+  .button {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    font-family: Nunito;
+    font-size: calc(10px + 1vmin);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 200%;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .block {
+    width: 30vmax;
+    margin-right: 40vmin;
+  }
+  .send {
+    width: 20vmax;
+    left: -30vmin;
+  }
+}

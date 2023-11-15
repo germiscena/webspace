@@ -1,0 +1,17 @@
+.header {
+  background-color: #000000;
+  color: #fff;
+  height: 10vh;
+  margin: 0;
+  text-align: center;
+
+  .logo {
+    width: 50%;
+    font-family: Inter;
+    font-size: calc(10px + 3.5vh);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 2vh;
+  }
+}

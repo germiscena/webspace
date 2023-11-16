@@ -10,11 +10,12 @@ const Instagram = () => {
   const arr = [0, 1, 2, 3, 4, 5, 6, 7];
   const fakeData = { media_url: "/image.png", caption: "Fake data", timestamp: "Fake time 3:00" };
   React.useEffect(() => {
-    axios
-      .get(
-        `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${token}`,
-      )
-      .then((res) => setData(res.data.data[0]));
+    // axios
+    //   .get(
+    //     `https://graph.instagram.com/v12.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${token}`,
+    //   )
+    //   .then((res) => setData(res.data.data[0]));
+    setData(fakeData);
   }, []);
   console.log(data);
   return (

@@ -8,6 +8,7 @@ const Instagram = () => {
   const token =
     "IGQWRQSFhyMmRjTU9DOHZAmTm1fb2FNMXFJVldWY0R3Qld4dDNEOGx0UjNLbHRac2lXMlVraXB2UHByelVlb0pyc2lQNlJXRklGVUc2S3RCOUE4MDFERElyQ24yOXZAFUUN4bDQ1aUlIMmFkSVN4eGFvYlhXck5MS0kZD";
   const arr = [0, 1, 2, 3, 4, 5, 6, 7];
+  const fakeData = { media_url: "/image.png", caption: "Fake data", timestamp: "Fake time 3:00" };
   React.useEffect(() => {
     axios
       .get(
@@ -22,7 +23,7 @@ const Instagram = () => {
       <div className={styles.posts}>
         {data &&
           arr.map((item) => {
-            return <SinglePost key={item} props={data} />;
+            return <SinglePost key={item} props={data ? data : fakeData} />;
           })}
       </div>
     </div>

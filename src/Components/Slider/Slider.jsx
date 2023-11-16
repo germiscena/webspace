@@ -5,22 +5,22 @@ const Slider = () => {
   const [activeButton, setActiveButton] = React.useState(0);
   const sliderText = [
     {
-      boldNumber: 3,
-      boldText: "и не более",
+      boldNumber: 8,
+      boldText: "хорошо",
       thinTitle: "Оценка дизайнеру:",
-      thinDescription: "Не заслужил,  там криво, там непонятно",
+      thinDescription: "Все понятно и минималистично",
     },
     {
-      boldNumber: 5,
+      boldNumber: 3,
       boldText: "звезд",
       thinTitle: "Сложность задания",
-      thinDescription: "Миссия с вертолетиком была легче..",
+      thinDescription: "Разобраться с InstApi и Maps было сложнее чем NextJs...",
     },
     {
-      boldNumber: 9,
+      boldNumber: "7",
       boldText: "часов",
       thinTitle: "Потребовалось на тестовое задание:",
-      thinDescription: "Справился быстро, забыл пообедать",
+      thinDescription: "Большую часть времени разбирался с API и Maps",
     },
   ];
   return (
